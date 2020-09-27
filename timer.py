@@ -53,7 +53,7 @@ class Timer(ttk.Frame):
 
             self.current_time.set(f"{minutes:02d}:{seconds:02d}")
             self.after(1000, self.decrement_time)
-        elif self.timer_running and current_time = "00:00":
+        elif self.timer_running and current_time == "00:00":
             self.timer_schedule.rotate(-1)
             next_up = self.timer_schedule[0]
             if next_up == "Pomodoro":
